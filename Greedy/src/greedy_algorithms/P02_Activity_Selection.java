@@ -69,7 +69,7 @@ public static void activity_selection(int start[],int end[],int n) {
 	public static void main(String args[]) {
 //		ArrayList<store> arr=new ArrayList<store>();
 //		
-//		arr.add(new store(1,12,25));
+//		arr.add(new store(1,12,25)); 
 //		arr.add(new store(2,10,20));
 //		arr.add(new store(1,20,30));
 		int n=6;
