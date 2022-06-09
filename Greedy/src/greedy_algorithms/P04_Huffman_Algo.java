@@ -30,7 +30,7 @@ class MyComparator implements Comparator<HuffmanNode> {
 	}
 }
 
-public class Huffman {
+public class P04_Huffman_Algo {
 
 	// recursive function to print the
 	// huffman-code through the tree traversal.
