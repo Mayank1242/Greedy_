@@ -44,22 +44,22 @@ static double frctionknapsnak(int weight,item arr[],int n) {
 	Arrays.sort(arr,new itemcompatotor());
 	
 	int curentweight=0;
-	double finalweight=0.0;
+	double finalvalue=0.0;
 	
 	for(int i=0;i<n;i++) {
 		if(curentweight+arr[i].weight<=weight) {
 			curentweight+=arr[i].weight;  
-			finalweight += arr[i].value;
+			finalvalue += arr[i].value;
 		}else {
 			int remain=weight-curentweight;
-			finalweight+=((double)arr[i].value / (double)arr[i].weight) * (double)remain;
+			finalvalue+=((double)arr[i].value / (double)arr[i].weight) * (double)remain;
 			break;
 		}
 	}
 	
 	
 	
-	return finalweight;
+	return finalvalue;
 }
 	
 public static void main(String args[]) {
