@@ -2,6 +2,7 @@ package greedy_algorithms;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 
 class Job{
 	int sno;
@@ -16,10 +17,20 @@ class Job{
 	
 	
 }
+class compatotor implements Comparator<Job>{
+	
+	@Override
+	public int compare(Job o1, Job o2) {
+		return o2.profit-o1.profit;
+	}
+	
+	
+	
+}
 public class P03_Job_Sequencing {
 
 public static ArrayList<Integer> jobscheduling(Job arr[],int n) {
-	Arrays.sort(arr,(a,b)->(b.profit-a.profit));
+	Arrays.sort(arr,new compatotor()); //Arrays.sort(arr,(a,b)->(b.profit-a.profit));
 	int max=0;
 	for(int i=0;i<n;i++) {
 		if(arr[i].deadline>max) {

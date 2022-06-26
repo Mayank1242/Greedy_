@@ -9,8 +9,8 @@ public static void main(String args[]) {
 	int size=arr.length;
 	int k=2;
 	
-	PriorityQueue<Integer> heap=new PriorityQueue<>();       //min heap
-//	  PriorityQueue<Integer> heap= new PriorityQueue<Integer>( Collections.reverseOrder());   //max heap
+	PriorityQueue<Integer> heap=new PriorityQueue<>();      
+//	  PriorityQueue<Integer> heap= new PriorityQueue<Integer>( Collections.reverseOrder());   
 	for(int i=0;i<size;i++) {
 		heap.add(arr[i]);
 		if(heap.size()>k) {

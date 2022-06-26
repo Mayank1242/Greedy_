@@ -56,7 +56,7 @@ public static void activity_selection(int start[],int end[],int n) {
 	
 	
 	for(int i=0;i<start.length;i++) {
-		if(meet.get(i).activity>limit) {
+		if(meet.get(i).start>limit) {
 			limit=meet.get(i).finish;
 			answer.add(meet.get(i).activity);
 		}
